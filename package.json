@@ -1,0 +1,14 @@
+{
+  "name": "meowsmp-bot",
+  "version": "1.0.0",
+  "description": "AFK bot for MeowSMP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.17.1",
+    "mineflayer-pathfinder": "^2.4.2",
+    "minecraft-data": "^3.32.0"
+  }
+}
