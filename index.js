@@ -13,10 +13,10 @@ function createBot() {
   bot.on('spawn', () => {
     console.log('✅ Bot đã vào MeowSMP!');
     // Đăng nhập nếu server yêu cầu
-    // bot.chat('/login matkhau');
+    // bot.chat('/login duyvu14');
 
     // Dùng lệnh nếu có /home farm hoặc /warp skill
-    // bot.chat('/home farm');
+    // bot.chat('/team home');
 
     const mcData = require('minecraft-data')(bot.version);
     const defaultMove = new Movements(bot, mcData);
