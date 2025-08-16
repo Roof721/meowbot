@@ -18,7 +18,7 @@ function createBot() {
 
   // Đợi 10s rồi login
   setTimeout(() => {
-    bot.chat('/login matkhau_cua_ban')
+    bot.chat('/login duyvu14')
     console.log('🔑 Đã gửi lệnh login')
   }, 10000) // 10000ms = 10 giây
 
