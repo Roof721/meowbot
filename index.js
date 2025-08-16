@@ -13,7 +13,20 @@ function createBot() {
   bot.on('spawn', () => {
     console.log('✅ Bot đã vào MeowSMP!');
     // Đăng nhập nếu server yêu cầu
-    // bot.chat('/login duyvu14');
+    bot.on('spawn', () => {
+  console.log('✅ Bot đã vào MeowSMP!')
+
+  // Đợi 10s rồi login
+  setTimeout(() => {
+    bot.chat('/login matkhau_cua_ban')
+    console.log('🔑 Đã gửi lệnh login')
+  }, 10000) // 10000ms = 10 giây
+
+  // Nếu muốn teleport hoặc chạy lệnh khác thì delay thêm
+  // setTimeout(() => {
+  //   bot.chat('/spawn')
+  // }, 15000)
+})
 
     // Dùng lệnh nếu có /home farm hoặc /warp skill
     // bot.chat('/l spawn Lạn_Trì_Hạn_Quan');
