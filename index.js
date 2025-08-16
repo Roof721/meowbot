@@ -3,7 +3,7 @@ const { pathfinder, Movements, goals } = require('mineflayer-pathfinder');
 
 function createBot() {
   const bot = mineflayer.createBot({
-    host: 'meowsmp.net',
+    host: 'ksmpvn.mcviet.top',
     port: 25565,
     username: 'ebird',
   });
@@ -16,7 +16,7 @@ function createBot() {
     // bot.chat('/login duyvu14');
 
     // Dùng lệnh nếu có /home farm hoặc /warp skill
-    // bot.chat('/team home');
+    // bot.chat('/l spawn Lạn_Trì_Hạn_Quan');
 
     const mcData = require('minecraft-data')(bot.version);
     const defaultMove = new Movements(bot, mcData);
