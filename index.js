@@ -21,6 +21,18 @@ function createBot() {
     bot.chat('/login duyvu14')
     console.log('🔑 Đã gửi lệnh login')
   }, 10000) // 10000ms = 10 giây
+bot.on('messagestr', (message) => {
+  console.log('💬 Chat:', message)
+})
+
+bot.on('kicked', (reason) => {
+  console.log('❌ Bị kick:', reason)
+})
+
+bot.on('error', (err) => {
+  console.log('⚠️ Lỗi:', err)
+})
+
 
   // Nếu muốn teleport hoặc chạy lệnh khác thì delay thêm
   // setTimeout(() => {
